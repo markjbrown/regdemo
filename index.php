@@ -57,6 +57,11 @@ if($conn_str = getenv("DBConnString")) {
 
 //echo("Connection String = " . "Database = " . $db . " Data Source = " . $host);
 
+echo "Database = " . $db;
+echo "Data Source = " . $host;
+echo "User ID = " . $user;
+echo "Password = " . $pwd;
+
 // Connect to database.
 try {
   $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);

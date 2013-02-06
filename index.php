@@ -28,8 +28,6 @@ td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
  
 <?php
 
-echo "Connection String = " . getenv("DBConnString");
-
 // Get DB connection info
 if($conn_str = getenv("DBConnString")) {
     $parts = explode(";", $conn_str);
@@ -39,7 +37,7 @@ if($conn_str = getenv("DBConnString")) {
       case 'Database':
         $db = $temp[1];
         break;
-      case 'data source':
+      case 'Data Source':
         $host = $temp[1];
         break;
       case 'User Id':
@@ -56,6 +54,8 @@ if($conn_str = getenv("DBConnString")) {
   $pwd = "root";
   $db = "registration";
 }
+
+echo "Connection String = " . "Database = " . $db " Data Source = " . $host
 
 // Connect to database.
 try {

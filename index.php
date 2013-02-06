@@ -27,7 +27,8 @@ td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
 </form>
  
 <?php
-echo getenv("DBConnString");
+
+echo "Connection String = " . getenv("DBConnString");
 
 // Get DB connection info
 if($conn_str = getenv("DBConnString")) {

@@ -29,7 +29,7 @@ td { padding: 0.25em 2em 0.25em 0em; border: 0 none; }
 <?php
 
 // Get DB connection info
-if($conn_str = getenv("DBConnString")) {
+if($conn_str = getenv("DBCnString")) {
     $parts = explode(";", $conn_str);
   foreach($parts as $part){
     $temp = explode("=", $part);

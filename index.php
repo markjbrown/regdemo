@@ -55,7 +55,7 @@ if($conn_str = getenv("DBConnString")) {
   $db = "registration";
 }
 
-echo "Connection String = " . "Database = " . $db " Data Source = " . $host
+//echo("Connection String = " . "Database = " . $db . " Data Source = " . $host);
 
 // Connect to database.
 try {

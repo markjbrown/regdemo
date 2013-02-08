@@ -1,0 +1,13 @@
+Wed Feb 06 2013 07:55:02 GMT-0800 (PST):
+[Error: Failed to validate Community image]
+Error: Failed to validate Community image
+    at /usr/local/lib/node_modules/azure-cli/lib/commands/vm.js:731:32
+    at CommunityUtil.resolveUid.performRequest.finalCallback (/usr/local/lib/node_modules/azure-cli/lib/communityUtil.js:56:7)
+    at ServiceClient._initDefaultFilter.filter (/usr/local/lib/node_modules/azure-cli/node_modules/azure/lib/services/core/serviceclient.js:538:11)
+    at CommunityUtil.resolveUid (/usr/local/lib/node_modules/azure-cli/lib/communityUtil.js:59:5)
+    at Request.ServiceClient._performRequest.self._buildRequestOptions.processResponseCallback [as _callback] (/usr/local/lib/node_modules/azure-cli/node_modules/azure/lib/services/core/serviceclient.js:206:9)
+    at Request.init.self.callback (/usr/local/lib/node_modules/azure-cli/node_modules/request/main.js:122:22)
+    at Request.EventEmitter.emit (events.js:99:17)
+    at Request.<anonymous> (/usr/local/lib/node_modules/azure-cli/node_modules/request/main.js:661:16)
+    at Request.EventEmitter.emit (events.js:126:20)
+    at IncomingMessage.Request.start.self.req.self.httpModule.request.buffer (/usr/local/lib/node_modules/azure-cli/node_modules/request/main.js:623:14)
